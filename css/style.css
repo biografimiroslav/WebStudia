@@ -43,8 +43,19 @@ img {
     padding: 0;
     list-style: none;
     display: flex;
-    margin-right: 40px !important;
+    gap: 8px;
+    align-items: center;
+    width: 128px;
+height: 38px;
+flex-shrink: 0;
 }
+
+.list-btn button{
+    padding: 128px 38px;
+
+    cursor: pointer;
+}
+
 
 
 .link:hover,
