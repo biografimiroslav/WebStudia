@@ -359,8 +359,9 @@ list-style: none;
     color: #757575;
 }
 
-
-  
+  .our-teem-li {
+    border: 1px solid #ECECEC;
+  }
 
 /* Футер */
 .footer {
