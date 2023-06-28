@@ -328,7 +328,7 @@ list-style: none;
 .our-teem-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 25px;
 }
 
 .our-teem-list > .item {
@@ -358,6 +358,10 @@ list-style: none;
 
     color: #757575;
 }
+
+.our-teem-ii {
+    border: 1px solid #ECECEC;
+}
   
 
 /* Футер */
@@ -367,6 +371,7 @@ list-style: none;
     background-color: #2f303a;
     margin: -8px;
 }
+
 
 .logo-web {
     color: #2196f3;
