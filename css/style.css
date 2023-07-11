@@ -222,7 +222,12 @@ list-style: none;
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: #2f303a;
+    background-image: url('/images/eafect-busines.png');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+      
 }
 
 .hero-title {
