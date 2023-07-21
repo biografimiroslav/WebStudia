@@ -215,7 +215,7 @@ list-style: none;
 .animation:focus,
 .animation:hover {
     color: #2196F3;
-    transform: scale(1.04); /* Значення масштабування при наведенні */\
+    transform: scale(1.04); /* Значення масштабування при наведенні */
 }
 
 .nav-menu {
