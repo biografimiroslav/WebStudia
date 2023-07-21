@@ -55,13 +55,15 @@ header {
     padding: 6px 22px;
     border-radius: 4px;
     border: transparent;
-  
+    font-family: Roboto;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
     text-align: center;
     letter-spacing: 0.03em;
     cursor: var(--cursor-button);
+    transform: scale(1); /* Стандартне значення масштабування */
+    transition: transform 0.3s ease;
   }
   .button-menu:hover{
     background-color: #2196F3;
@@ -72,7 +74,11 @@ font-family: Roboto;
 font-weight: 500;
 line-height: 26px;
 letter-spacing: 0.48px;
+transform: scale(1.07); /* Значення масштабування при наведенні */
 cursor: pointer;
+transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
+
   }
   .button-menu:focus {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -80,11 +86,12 @@ cursor: pointer;
     background-color: var(--accent-color);
   }
 
+
 .list-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    decoration: none;
+    list-style: none;
   }
 
 .list-img-text {
@@ -110,9 +117,19 @@ list-style: none;
     list-style: none;
 }
 
+.list-li {
+    border: 1px solid #EEE ;
+    transform: scale(1); /* Стандартне значення масштабування */
+    transition: transform 0.3s ease;
+}
 
-.list-img li {
-    border: 1px solid #ECECEC;
+.list-li:hover {
+    border: 1px solid #EEE;
+    background: #FFF;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    transform: scale(1.04); /* Значення масштабування при наведенні */
+    cursor: pointer;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
   
@@ -161,14 +178,14 @@ list-style: none;
 }
 
 .logo {
-    padding-top: 32px;
+    padding-top: 24px;
     padding-bottom: 32px;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-
+    
     letter-spacing: 0.03em;
 
     color: #000000;
@@ -181,10 +198,23 @@ list-style: none;
 .nav {
     display: flex;
     margin-left: 93px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: .02em;
 }
 
 .nav > .item {
     margin-left: 50px;
+}
+
+.animation {
+    transform: scale(1); /* Стандартне значення масштабування */
+    transition: transform 0.3s ease;
+}
+
+.animation:hover {
+    transform: scale(1.04); /* Значення масштабування при наведенні */\
 }
 
 .nav-menu {
@@ -198,6 +228,23 @@ list-style: none;
     letter-spacing: 0.28px;
 }
 
+.current {
+    position: relative;
+    color: #2196F3;
+}
+
+.current::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: #2196F3;
+}
+
+
 .info {
     display: flex;
     margin-left: auto;
@@ -206,6 +253,7 @@ list-style: none;
 .info > .item {
     margin-left: 50px;
 }
+
 
 .info-cont {
     display: block;
@@ -224,7 +272,7 @@ list-style: none;
     padding-bottom: 200px;
     background-color: #2F303A;
     max-width: 1600px;
-    background-image:url('/images/eafect-busines.png');
+    background-image:url('../images/eafect-busines.png');
     margin-left: auto;
     margin-right: auto;
     height: 600px;
@@ -376,12 +424,22 @@ list-style: none;
     color: #757575;
 }
 
-  .our-teem-ii {
+  .our-teem-li {
     border-radius: 0px 0px 4px 4px;
 background: #FFF;
 /* material shadow v1 */
 box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+margin: 50px 0px;
+transform: scale(1); /* Стандартне значення масштабування */
+transition: transform 0.3s ease;
   }
+
+  .our-teem-li:hover {
+    transform: scale(1.10); /* Значення масштабування при наведенні */
+    cursor: pointer;
+  }
+
+
 
 /* Футер */
 .footer {
