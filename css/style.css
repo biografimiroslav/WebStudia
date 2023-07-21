@@ -118,7 +118,7 @@ list-style: none;
 }
 
 .list-li {
-    border: 1px solid #EEE ;
+    border: 3px solid #EEE ;
     transform: scale(1); /* Стандартне значення масштабування */
     transition: transform 0.3s ease;
 }
