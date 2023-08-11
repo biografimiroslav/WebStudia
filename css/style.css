@@ -24,7 +24,6 @@ img {
     height: auto;
 }
 
-
 header {
     border-bottom: 1px solid #ECECEC;
 }
@@ -47,11 +46,11 @@ header {
     display: flex;
     justify-content: center;
     margin-bottom: 50px;
-  }
-  .filter-list:not(:last-child) {
+}
+.filter-list:not(:last-child) {
     margin-right: 8px;
-  }
-  .button-menu {
+}
+.button-menu {
     padding: 6px 22px;
     border-radius: 4px;
     border: transparent;
@@ -63,47 +62,50 @@ header {
     cursor: var(--cursor-button);
     transform: scale(1); /* Стандартне значення масштабування */
     transition: transform 0.3s ease;
-  }
-  .button-menu:hover{
-    background-color: #2196F3;
-    color: #FFF;
-text-align: center;
-font-size: 16px;
-font-family: Roboto;
-font-weight: 500;
-line-height: 26px;
-letter-spacing: 0.48px;
-cursor: pointer;
-transform: scale(1.07); /* Значення масштабування при наведенні */
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12), 0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.10);
-
-  }
-  .button-menu:focus {
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.button-menu:hover {
+    background-color: #2196f3;
+    color: #fff;
+    text-align: center;
+    font-size: 16px;
+    font-family: Roboto;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.48px;
+    cursor: pointer;
+    transform: scale(1.07); /* Значення масштабування при наведенні */
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
+        0px 1px 2px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.button-menu:focus {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+        0px 2px 2px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
     background-color: var(--accent-color);
     color: #000000;
     font-family: Roboto;
-  }
-
+}
 
 .list-img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
+    gap: 36px;
     list-style: none;
-  }
+}
 
 .list-img-text {
     display: flex;
     text-decoration: none;
-flex-direction: column;
-justify-content: center;
-gap: 94px;
-margin-top: 20px;
-margin: 20px 24px;
-list-style: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 94px;
+    margin-top: 20px;
+    margin: 20px 24px;
+    list-style: none;
 }
 
 .list-img-text-p {
@@ -119,21 +121,23 @@ list-style: none;
 }
 
 .list-li {
-    border: 3px solid #EEE ;
+    border: 3px solid #eee;
     transform: scale(1); /* Стандартне значення масштабування */
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .list-li:hover {
-    border: 1px solid #EEE;
-    background: #FFF;
-    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16), 0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
-    transform: scale(1.04); /* Значення масштабування при наведенні */
+    border: 1px solid #eee;
+    background: #fff;
+    box-shadow: 1px 4px 6px 0px rgba(0, 0, 0, 0.16),
+        0px 4px 4px 0px rgba(0, 0, 0, 0.06), 0px 1px 1px 0px rgba(0, 0, 0, 0.12);
+    transform: scale(1.09); /* Значення масштабування при наведенні */
     cursor: pointer;
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  
-  
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 
 .link:hover,
 .link:focus {
@@ -186,7 +190,7 @@ list-style: none;
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
-    
+
     letter-spacing: 0.03em;
     color: #000000;
     transform: scale(1); /* Стандартне значення масштабування */
@@ -198,9 +202,11 @@ list-style: none;
 }
 
 .logo:hover {
-    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: scale(1.05); /* Значення масштабування при наведенні */
-    text-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.02); /* Значення масштабування при наведенні */
 }
 
 .nav {
@@ -209,7 +215,7 @@ list-style: none;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: .02em;
+    letter-spacing: 0.02em;
 }
 
 .nav > .item {
@@ -217,13 +223,42 @@ list-style: none;
 }
 
 .animation {
-    transform: scale(1); /* Стандартне значення масштабування */
-    transition: transform 0.3s ease;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
 }
-.animation:focus,
+
 .animation:hover {
-    color: #2196F3;
-    transform: scale(1.17); /* Значення масштабування при наведенні */
+    color: #2196f3;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),fill 250ms cubic-bezier(0.4, 0, 0.2, 1),background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animation::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #2196f3;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.animation:hover::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: #2196f3;
+    transform: scaleX(1);
 }
 
 .nav-menu {
@@ -239,20 +274,19 @@ list-style: none;
 
 .current {
     position: relative;
-    color: #2196F3;
+    color: #2196f3;
 }
 
 .current::after {
-    content: "";
+    content: '';
     position: absolute;
-    bottom: -4px;
+    bottom: -5px;
     left: 0;
     width: 100%;
     height: 4px;
     border-radius: 2px;
-    background: #2196F3;
+    background: #2196f3;
 }
-
 
 .info {
     display: flex;
@@ -262,7 +296,6 @@ list-style: none;
 .info > .item {
     margin-left: 50px;
 }
-
 
 .info-cont {
     display: block;
@@ -275,20 +308,24 @@ list-style: none;
     letter-spacing: 0.28px;
 }
 
+.info-cont:hover {
+    color: #2196f3;
+}
+
 /* Герой */
 .hero {
     padding-top: 200px;
     padding-bottom: 200px;
-    background-color: #2F303A;
+    background-color: #2f303a;
     max-width: 1600px;
-    background-image:url('../images/eafect-busines.png');
+    background-image: url('../images/eafect-busines.png');
     margin-left: auto;
     margin-right: auto;
     height: 600px;
     background-repeat: no-repeat;
     background-position: center;
-    background-size: cover; 
-    text-align: center;  
+    background-size: cover;
+    text-align: center;
 }
 
 .hero-title {
@@ -331,7 +368,8 @@ list-style: none;
 
 .hero-btn:hover .hero-btn:focus {
     background-color: #2195f3b9;
-    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     border-radius: 4px;
 }
 
@@ -341,7 +379,7 @@ list-style: none;
 }
 
 .animation-btn:hover {
-   transform: scale(1.17); /* Значення масштабування при наведенні */
+    transform: scale(1.05); /* Значення масштабування при наведенні */
 }
 
 /* Наші переваги */
@@ -384,7 +422,7 @@ list-style: none;
 }
 .advantages-icon {
     border-radius: 4px;
-    background: #F5F4FA;
+    background: #f5f4fa;
     text-align: center;
     align-items: center;
     padding: 30px 100px;
@@ -438,39 +476,38 @@ list-style: none;
 
     text-align: center;
     letter-spacing: 0.03em;
- 
+
     color: #757575;
 }
 
-  .our-teem-li {
+.our-teem-li {
     border-radius: 0px 0px 4px 4px;
-background: #FFF;
-/* material shadow v1 */
-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.20), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
-margin: 50px 0px;
-transform: scale(1); /* Стандартне значення масштабування */
-transition: transform 0.3s ease;
-  }
+    background: #fff;
+    /* material shadow v1 */
+    box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
+    margin: 50px 0px;
+    transform: scale(1); /* Стандартне значення масштабування */
+    transition: transform 0.3s ease;
+}
 
-  .our-teem-li:hover {
-    transform: scale(1.10); /* Значення масштабування при наведенні */
+.our-teem-li:hover {
+    transform: scale(1.1); /* Значення масштабування при наведенні */
     cursor: pointer;
-  }
-  
-  .clients {
-   display: flex;
-  }
+}
 
-  .clients-s {
+.clients {
+    display: flex;
+}
+
+.clients-s {
     border-radius: 4px;
-border: 1px solid #AFB1B8;
-width: 40px;
-height: 52px;
-flex-shrink: 0;
-display: flex;
-  }
-
-
+    border: 1px solid #afb1b8;
+    width: 40px;
+    height: 52px;
+    flex-shrink: 0;
+    display: flex;
+}
 
 /* Футер */
 .footer {
@@ -479,7 +516,6 @@ display: flex;
     background-color: #2f303a;
     margin: -8px;
 }
-
 
 .logo-web {
     color: #2196f3;
@@ -502,4 +538,39 @@ display: flex;
     font-family: Roboto;
     line-height: 24px;
     letter-spacing: 0.42px;
+}
+
+
+.clickable-object {
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .hidden-content {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.90);
+    opacity: 0;
+    transition: bottom 0.5s ease, opacity 0.5s ease;
+  }
+  
+  .clickable-object:hover .hidden-content {
+    bottom: 0;
+    opacity: 1;
+  }
+  
+  .hidden-paragraph {
+    color: white;
+    font-size: 18px;
+  }
+
+.p-anim {
+    width: 322px;
+    position: absolute;
+    top: 63px;
+    left: 24px;
 }
