@@ -1,0 +1,34 @@
+.our-works-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.our-works-list > .item {
+    flex-basis: calc((100% - 60px) / 3);
+    position: relative;
+}
+
+.our-works-bg {
+    position: absolute;
+    width: 100%;
+    height: 70px;
+    bottom: 0px;
+
+    justify-content: center;
+    align-items: center;
+    display: flex;
+
+    background-color: rgba(47, 48, 58, 0.8);
+}
+
+.our-works-title {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.42px;
+    text-transform: uppercase;
+}

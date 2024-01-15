@@ -1,0 +1,161 @@
+header {
+    border-bottom: 1px solid #ececec;
+}
+
+.main-mav {
+    display: flex;
+    align-items: center;
+}
+
+.top-navigation {
+    display: flex;
+}
+
+.logo {
+    padding-top: 24px;
+    padding-bottom: 32px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+
+    letter-spacing: 0.03em;
+    color: #000000;
+    transform: scale(1); /* Стандартне значення масштабування */
+    transition: transform 0.3s ease;
+}
+
+.style-logo {
+    color: $acent-color;
+}
+
+.logo:hover {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transform: scale(1.02); /* Значення масштабування при наведенні */
+}
+
+.span-logo {
+    color: $acent-color;
+}
+
+.nav {
+    display: flex;
+    margin-left: 93px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+
+.nav > .item {
+    margin-left: 50px;
+}
+
+.animation {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+}
+
+.animation:hover {
+    color: $acent-color;
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.animation::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: $acent-color;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.animation:hover::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: $acent-color;
+    transform: scaleX(1);
+}
+
+.nav-menu {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: #212121;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+}
+
+.current {
+    position: relative;
+    color: $acent-color;
+}
+
+.current::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: $acent-color;
+}
+
+.info {
+    display: flex;
+    margin-left: auto;
+}
+
+.info > .item {
+    margin-left: 50px;
+}
+
+.header-svg {
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.info-cont {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    color: $basic-color;
+    font-size: 14px;
+    font-family: Roboto;
+    font-weight: 500;
+    letter-spacing: 0.28px;
+}
+
+.info-cont:hover {
+    color: $acent-color;
+}
+
+.info-icon {
+    width: 16px;
+    height: 12px;
+    fill: black;
+}
