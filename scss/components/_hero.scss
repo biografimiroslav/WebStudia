@@ -11,19 +11,19 @@
     background-position: center;
     background-size: cover;
     text-align: center;
-}
 
-.hero-title {
-    margin: 0 auto 30px;
-    max-width: 696px;
-    color: #fff;
-    text-align: center;
-    font-size: 44px;
-    font-family: Roboto;
-    font-weight: 900;
-    line-height: 60px;
-    letter-spacing: 2.64px;
-    text-transform: uppercase;
+    &__hero-title {
+        margin: 0 auto 30px;
+        max-width: 696px;
+        color: #fff;
+        text-align: center;
+        font-size: 44px;
+        font-family: Roboto;
+        font-weight: 900;
+        line-height: 60px;
+        letter-spacing: 2.64px;
+        text-transform: uppercase;
+    }
 }
 
 .hero-btn {
