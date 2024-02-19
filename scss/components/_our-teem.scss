@@ -4,12 +4,24 @@
 
 .our-teem-list {
     display: flex;
+    padding-left: 0px;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 30px;
 }
 
 .our-teem-list > .item {
-    flex-basis: calc((100% - 90px) / 4);
+    @media screen and (min-width: 480px) {
+        flex-basis: calc((100% - 30px) / 1); 
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-basis: calc((100% - 30px) / 2); 
+    }
+
+    @media screen and (min-width: 1200px) {
+        flex-basis: calc((100% - 90px) / 4); 
+    }
 }
 .our-teem-title {
     margin-top: 30px;
@@ -45,6 +57,17 @@
     margin: 50px 0px;
     transform: scale(1); /* Стандартне значення масштабування */
     transition: transform 0.3s ease;
+    @media screen and (min-width: 480px) {
+        margin: 0px 0px;
+    }
+
+    @media screen and (min-width: 768px) {
+
+    }
+
+    @media screen and (min-width: 1200px) {
+
+    }
 }
 
 .our-teem-li:hover {

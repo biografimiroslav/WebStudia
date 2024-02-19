@@ -1,33 +1,63 @@
 .hero {
-    padding-top: 200px;
-    padding-bottom: 200px;
     background-color: #2f303a;
-    max-width: 1600px;
     background-image: url('../images/eafect-busines.png');
     margin-left: auto;
     margin-right: auto;
-    height: 600px;
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     text-align: center;
+
+    @media screen and (min-width: 480px) {
+        padding-top: 118px;
+        max-width: 480px;
+        padding-bottom: 118px;
+        height: 480px;
+    }
+
+    @media screen and (min-width: 768px) {
+        padding-top: 118px;
+        max-width: 768px;
+        padding-bottom: 118px;
+        height: 480px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        max-width: 1600px;
+        padding-bottom: 200px;
+        height: 600px;
+    }
 
     &__hero-title {
         margin: 0 auto 30px;
         max-width: 696px;
         color: #fff;
         text-align: center;
-        font-size: 44px;
         font-family: Roboto;
         font-weight: 900;
         line-height: 60px;
         letter-spacing: 2.64px;
         text-transform: uppercase;
+
+        @media screen and (min-width: 480px) {
+            font-size: 25px;
+            width: 300px;
+        }
+    
+        @media screen and (min-width: 768px) {
+            font-size: 25px;
+            width: 387px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            font-size: 44px;
+            width: 696px;
+        }
     }
 }
 
 .hero-btn {
-    padding: 10px 32px;
     margin-left: auto;
     margin-right: auto;
 
@@ -49,6 +79,18 @@
 
     cursor: pointer;
     border: transparent;
+
+    @media screen and (min-width: 480px) {
+        padding: 18px 24px 16px 24px;
+     }
+        
+     @media screen and (min-width: 768px) {
+        padding: 16px 24px;
+    }
+        
+     @media screen and (min-width: 1200px) {
+        padding: 10px 32px;
+     }
 }
 
 .hero-btn:hover .hero-btn:focus {
