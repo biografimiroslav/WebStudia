@@ -26,3 +26,4 @@ function onBackDropClick(event) {
         onCloseModal();
     }
 }
+

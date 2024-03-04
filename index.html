@@ -20,7 +20,8 @@
     </head>
 
     <body>
-        <!-- <header class="header">
+        <header class="header">
+            <script src="./mobile.js"></script>
             <div class="container main-mav">
                 <nav class="top-navigation">
                     <a href="/" class="logo link"
@@ -72,8 +73,35 @@
                         >
                     </li>
                 </ul>
+                <!-- button-mobile -->
+                <button class="button-mobile" data-menu-button>
+                <svg class="icon-mobile " aria-label="Переключатель меню">
+                     <use class="menu-icon" href="./images/svg/symbol-defs.svg#menu-icon"></use>
+                     <use class="menu-close" href="./images/svg/symbol-defs.svg#close-menu"></use>
+                </svg>
+            </button>
             </div>
-        </header> -->
+        </header>
+        <!-- мобільне меню -->
+<div class="mobile-menu" data-menu>
+    <ul class="mobile-list">
+    <li class="item"><a href="" class="mobile-link curren-menu">Студія</a></li>
+    <li class="item"><a href="./portfolio.html" class="mobile-link">Портфоліо</a></li>
+    <li class="item"><a href="" class="mobile-link">Контакти</a></li>
+    </ul>
+    
+    <ul class="mobile-ctn">
+    <li class="item"><a href="tel:+380961111111" class="mobile-ctn-tel">+38 096 111 11 11</a></li>
+    <li class="item"><a href="mailto:info@devstudio.com" class="mobile-ctn-email">info@devstudio.com</a></li>
+    </ul>
+    
+    <ul class="mobile-social">
+    <li class="item"><a href="" class="mobile-social-link">Instagram</a></li>
+    <li class="item"><a href="" class="mobile-social-link">Twitter</a></li>
+    <li class="item"><a href="" class="mobile-social-link">Facebook</a></li>
+    <li class="item"><a href="" class="mobile-social-link">LinkedIn</a></li>
+    </ul>
+    </div
         <main>
             <!-- Герой -->
             <section class="hero">
@@ -570,7 +598,7 @@
             </div>
             <script src="./script.js"></script>
             <!-- Футер -->
-            <!-- <footer class="footer">
+            <footer class="footer">
                 <div class="container">
                     <div class="widget-blok">
                         <nav><a href="/" class="logo"><span class="span-logo">Web</span><span
@@ -630,7 +658,7 @@
                         </form>
                     </div>
                 </div>
-            </footer> -->
+            </footer>
         </main>
     </body>
 </html>

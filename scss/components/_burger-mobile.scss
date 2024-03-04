@@ -1,0 +1,38 @@
+.button-mobile {
+    position: relative;
+    
+    z-index: 120;
+    background-color: transparent;
+    border: none;
+    display: -webkit-box;
+    
+    @media screen and (min-width: 768px) {
+    display: none;
+    }
+    }
+    
+    .icon-mobile {
+    position: absolute;
+    
+    width: 40px;
+    height: 40px;
+    margin-top: -20px;
+    
+    @media screen and (min-width: 480px) {
+    margin-left: 220px;
+    }
+    }
+    
+    .menu-close {
+    display: none;
+    }
+    
+    .is-open {
+    .menu-close {
+    display: block;
+    }
+    
+    .menu-icon {
+    display: none;
+    }
+    }
